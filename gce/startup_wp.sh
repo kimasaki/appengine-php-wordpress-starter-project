@@ -1,6 +1,6 @@
 # WP Statrup script for Google Compute Engine (https://cloud.google.com/products/compute-engine/)
 # you can start WP GCE instace by the following command. 
-# gcutil --project=<your project name> addinstance <instance name> --metadata=project_id:<your project id> --metadata=sql_pwd:<mysql password> --metadata=startup-script-url:<location of script>
+# gcutil --project=<your project name> addinstance <instance name> --metadata=project_id:<your project id> --metadata=sql_pwd:<mysql password> --metadata=startup-script-url:https://raw.githubusercontent.com/GoogleCloudPlatform/appengine-php-wordpress-starter-project/master/gce/startup_wp.sh
  
 PACKAGES=(make unzip gcc libmysqlclient-dev libxml2-dev bzip2 git libmysqlclient-dev libxml2-dev mysql-server-5.5)
 
